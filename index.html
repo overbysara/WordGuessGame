@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Word Guess Game</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <script src="./assets/javascript/game.js" type="javascript"></script>
 </head>
 <body>
     
+    <div class="main">
+        <img src="assets/images/sunflower-sun.jpg" class="rounded" alt="sunflower">
+        <p><h1>Life in a Colorado summer!</h1></p>
+        <p>Play this word guessing game to take you back to warm evenings.</p>
+        <p><h2>Press any key to start!</h2></p>
+    </div>
 
+<p><br></p>
 
+    <table class="game">
+        <tr>
+            <th><h1>Current Word: </h1><div id="current-word"></div></th>
+        </tr>
+        <tr>
+            <td>Letters guessed: <div id="guesses-text"></div></td>
+        </tr>
+        <tr>
+            <td>Wins: </td><div id=wins-text></div>
+        </tr>
+        <tr>
+            <td>Number of guesses remaining: <div id="guesses-left"></div></td>
+        </tr>
+
+    </table>
 
 </body>
 </html>
