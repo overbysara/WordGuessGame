@@ -1,5 +1,5 @@
 // Word array
-var words = ["heat", "cicadas", "hiking", "deck", "sunset", "grilling", "beer", "camping", "fireworks", "gardening", "baseball", "stargazing", "picnics", "smores", "flowers", "sunlight"];
+var wordArray = ["heat", "cicadas", "hiking", "deck", "sunset", "grilling", "beer", "camping", "fireworks", "gardening", "baseball", "stargazing", "picnics", "smores", "flowers", "sunlight"];
     
 //Variables
 var wins = 0;
@@ -15,7 +15,7 @@ var winsText = document.getElementById("wins-text");
 //Player starts the game by entering a key. Computer randomly chooses word from word array.
 document.onkeyup = function(event) {
     var userGuess = event.key;
-    var currentWord = words[Math.floor(Math.random() * words.length)];
+    var currentWord = wordArray[Math.floor(Math.random() * wordArray.length)];
 
 //Word to guess will be displayed as ----- with '-' equal to the number of letters in the word.
 for (var i = 0; i < words[currentWord].length; i++) {

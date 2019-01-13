@@ -8,33 +8,44 @@
 
     <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-    <script src="./assets/javascript/game.js" type="javascript"></script>
 </head>
 <body>
-    
+    <script type="text/javascript" src="assets/javascript/game2.js"></script>    
+    <script>
+        startGame();
+        refreshScreen();
+    </script>
+
     <div class="main">
         <img src="assets/images/sunflower-sun.jpg" class="rounded" alt="sunflower">
-        <p><h1>Life in a Colorado summer!</h1></p>
-        <p>Play this word guessing game to take you back to warm evenings.</p>
+        <p><h1>A Colorado summer!</h1></p>
+        <p>Play this word guessing game to take you to a late, sunlit evening.</p>
         <p><h2>Press any key to start!</h2></p>
     </div>
 
-<p><br></p>
+<p></p>
 
     <table class="game">
         <tr>
-            <th><h1>Current Word: </h1><div id="current-word"></div></th>
+            <td><h1>Current Word: </h1></td>
+            <td><h1><div id="currentWord"></div></h1></td>
         </tr>
         <tr>
-            <td>Letters guessed: <div id="guesses-text"></div></td>
+            <td>Letters guessed:</td>
+            <td><div id="userGuesses"></div></td>
         </tr>
         <tr>
-            <td>Wins: </td><div id=wins-text></div>
+            <td>Number of guesses remaining: </td>
+            <td><div id="guessesLeft"></div></td>
         </tr>
         <tr>
-            <td>Number of guesses remaining: <div id="guesses-left"></div></td>
+            <td>Wins: </td>
+            <td><div id=gameWins></div></td>
         </tr>
-
+        <tr>
+            <td>Losses: </td>
+            <td><div id=gameLosses></div></td>
+        </tr>
     </table>
 
 </body>

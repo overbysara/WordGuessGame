@@ -24,11 +24,13 @@ h2 {
 .game {
     padding: 20px;
     margin: auto;
-    table-layout: auto;
+    align-content: left;
 }
 
 table {
     width: 80%;
+    border: 10px;
+    background: white;
 }
 
 img {
