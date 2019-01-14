@@ -1,4 +1,4 @@
-//NOTE: Game is not functioning. Game2.js file is a separate attempt using patched code.
+//NOTE: Game is not functioning. Game2.js file is a separate attempt using found patched code.
 
 // Word array
 var wordArray = ["heat", "crickets", "hiking", "deck", "sunset", "grilling", "beer", "camping", "fireworks", "gardening", "baseball", "stargazing", "picnics", "smores", "flowers", "sunlight"];
@@ -15,7 +15,7 @@ var guessesTogo = document.getElementById("guessesLeft");
 var winsText = document.getElementById("gamewins");
 
 //Turn on mood-setting evening sounds
-var sound = new Audio('assets/EveningInsects.mp3');
+var sound = new Audio('assets/sounds/EveningInsects.mp3');
     sound.autoplay = true;
     sound.loop = true;
 
