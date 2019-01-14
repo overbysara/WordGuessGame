@@ -1,7 +1,7 @@
 //NOTE: Game is not functioning. Game2.js file is a separate attempt using patched code.
 
 // Word array
-var wordArray = ["heat", "cicadas", "hiking", "deck", "sunset", "grilling", "beer", "camping", "fireworks", "gardening", "baseball", "stargazing", "picnics", "smores", "flowers", "sunlight"];
+var wordArray = ["heat", "crickets", "hiking", "deck", "sunset", "grilling", "beer", "camping", "fireworks", "gardening", "baseball", "stargazing", "picnics", "smores", "flowers", "sunlight"];
     
 //Variables
 var wins = 0;
@@ -14,6 +14,11 @@ var guessedLetters = document.getElementById("userGuesses");
 var guessesTogo = document.getElementById("guessesLeft");
 var winsText = document.getElementById("gamewins");
 
+//Turn on mood-setting evening sounds
+var sound = new Audio('assets/EveningInsects.mp3');
+    sound.autoplay = true;
+    sound.loop = true;
+
 //Player starts the game by entering a key. Computer randomly chooses word from word array.
 document.onkeyup = function(event) {
     var userGuess = event.key;
@@ -25,7 +30,7 @@ for (var i = 0; i < wordArray[currentWord].length; i++) {
     }   
 //Player will enter a letter to guess the word.
 //If a correct letter is entered, letter will be displayed in "current word"
-//If and when the correct word is guessed, wins will increase by 1.
+//If the word is guessed, wins will increase by 1 and a new word will be loaded.
 
 if (userGuess = currentWord) { 
     wins++;
@@ -34,7 +39,6 @@ if (userGuess = currentWord) {
 
 } else if (userGuess != currentWord) {
     guessesLeft--;
-
 }
 
 if (guessesLeft=0) {

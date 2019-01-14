@@ -33,9 +33,21 @@ h2 {
     border-spacing: 10px;
     width: 80%;
     background: white;
+    border: 2px;
+    border-style: dashed;
 }
-
 
 img {
     width: 100%;
+}
+
+.footer {
+	text-align: center;
+	background-color: #dfb74cde;
+	color:   #dfb74cde;
+	line-height: 50px;
+	border-top: 8px solid darkolivegreen;
+    font-size: 12px;
+    clear: both;
+    height: 100%;
 }
