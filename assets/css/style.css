@@ -4,7 +4,7 @@ body {
     font-size: 18px;
     background-color: rgb(241, 241, 231);
     color: black;
-    line-height: 20px;
+    line-height: 34px;
     position: relative;
 }
 
@@ -17,21 +17,24 @@ body {
     background: white;
 }
 
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
 h2 {
     color: darkolivegreen;
+    font-size: 26px;
 }
 
 .game {
-    padding: 20px;
     margin: auto;
-    align-content: left;
-}
-
-table {
+    padding: 20px;
+    border-spacing: 10px;
     width: 80%;
-    border: 10px;
     background: white;
 }
+
 
 img {
     width: 100%;
